@@ -38,6 +38,7 @@ body {
     font-size: 30px;;
     color: white;
     width: 300px;
+    cursor: pointer;
 }
 
 .city > option {
