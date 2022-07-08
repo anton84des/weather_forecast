@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    max-width: 700px;
+    max-width: 600px;
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .city{
@@ -47,4 +48,40 @@ body {
 
 .select-city{
     margin-bottom: 100px;
+}
+
+.weather-widget{
+    width: 100%;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.date-and-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.date{
+    margin: 0 0 10px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.time{
+    font-size: 80px;
+    letter-spacing: 2px;
+    margin: 0px;
+    text-align: center;
+}
+
+.city-name{
+    margin: 10px 0 0 0;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
 }

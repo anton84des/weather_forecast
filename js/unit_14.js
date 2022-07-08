@@ -22,6 +22,9 @@ function showWeather(data) {
         .then(function (data) {
             console.log(data);
 
+            document.querySelector('.main-ico').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.list[0].weather[0]['icon']}@4x.png">`;
+            document.querySelector('.city-name').innerText = data.city.name;
+
 
         })
 };
@@ -33,16 +36,19 @@ function showDateAndTime() {
     let date = now.getDate();
     let day = now.getDay();
 
-    console.log(year);
-    console.log(month);
-    console.log(date);
-    console.log(day);
+    let arrDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    let dayText = arrDays[day];
+
+    let arrMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    let monthText = arrMonths[month];
+
+    document.querySelector('.date').innerHTML = `${dayText} ${monthText} ${date}, ${year}`;
 
     //time
     let hours = now.getHours();
     let minutes = now.getMinutes();
-    console.log(hours);
-    console.log(minutes);
+    document.querySelector('.time').innerHTML = `${hours}:${minutes}`;
+
 }
 
 getWeather();
