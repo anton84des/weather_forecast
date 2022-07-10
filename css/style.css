@@ -1,11 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+
+
 body {
     background: #2291d1 url(../img/bg.jpg);
     background-size: cover;
     color: white;
     font-family: 'Roboto', sans-serif;
+    /* overflow-y:hidden; */
 }
 
 :active, :hover, :focus {
@@ -14,7 +17,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 650px;
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
@@ -58,6 +61,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .date-and-time{
@@ -84,4 +88,88 @@ body {
     font-size: 30px;
     text-align: center;
     letter-spacing: 1px;
+}
+
+.minor-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.current-temp{
+    width: 200px;
+}
+
+.current-degrees{
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+}
+
+.current-wind{
+    text-align: center;
+    margin: 10px 10px 0 0;
+}
+
+.description{
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.wind{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.wind-arrow{
+    height: 18px;
+}
+
+.hours-temp-block{
+    display: flex;
+    flex-direction: row;
+}
+
+.hours, .hours-temp{
+    margin: 0;
+}
+
+.hours-temp{
+    font-size: 30px;
+    margin-top: -7px;
+}
+
+.hours-description{
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.hours-ico{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+}
+
+
+.hours-temp-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.hours-temp-item:last-child{
+    margin-right: 0;
+}
+
+/* media */
+@media (max-width: 568px){
+    .main-info{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
