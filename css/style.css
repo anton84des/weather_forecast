@@ -8,7 +8,7 @@ body {
     background-size: cover;
     color: white;
     font-family: 'Roboto', sans-serif;
-    /* overflow-y:hidden; */
+    overflow-y:hidden;
 }
 
 :active, :hover, :focus {
@@ -168,8 +168,27 @@ body {
 
 /* media */
 @media (max-width: 568px){
+    body{
+        overflow-y:scroll;
+    }
+
+    .container{
+        height: auto;
+    }
+
     .main-info{
         flex-direction: column-reverse;
         align-items: center;
+        margin-bottom: 0;
+    }
+
+    .minor-info {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -29px;
+    }
+
+    .current-temp{
+        margin-bottom: 38px;
     }
 }
