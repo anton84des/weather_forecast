@@ -14,18 +14,66 @@
 
 <body>
     <div class="container">
+        <div class="select-city">
+            <select class="city">
+                <option value="703446">Kyiv</option>
+                <option value="706482">Kharkiv</option>
+                <option value="709930">Dnipro</option>
+                <option value="702550">Lviv</option>
+            </select>
+        </div>
+
         <div class="weather-widget">
-            <div class="select-city">
-                <select class="city">
-                    <option value="703446">Kyiv</option>
-                    <option value="706482">Kharkiv</option>
-                    <option value="709930">Dnipro</option>
-                    <option value="702550">Lviv</option>
-                </select>
+
+            <div class="main-info">
+                <div class="main-ico"></div>
+                <div class="date-and-time">
+                    <p class="date">Friday June 18, 2022</p>
+                    <p class="time">22:37</p>
+                    <p class="city-name">Kyiv</p>
+                </div>
             </div>
+
+            <div class="minor-info">
+                <div class="current-temp">
+                    <p class="current-degrees">23</p>
+                    <div class="wind">
+                        <p class="current-wind">Wind 0 m/s</p>
+                        <img src="./img/white-wind-arrow.png" alt="wind direction" class="wind-arrow">
+                    </div>
+                    <p class="description">broken clouds</p>
+                </div>
+                <div class="hours-temp-block">
+                    <div class="hours-temp-item">
+                        <p class="hours first-three-hours">03:00</p>
+                        <div class="hours-ico first-three-hours-ico"></div>
+                        <p class="hours-temp first-three-hours-temp">23</p>
+                        <p class="hours-description first-three-hours-description"></p>
+                    </div>
+                    <div class="hours-temp-item">
+                        <p class="hours second-three-hours">03:00</p>
+                        <div class="hours-ico second-three-hours-ico"></div>
+                        <p class="hours-temp second-three-hours-temp">23</p>
+                        <p class="hours-description second-three-hours-description"></p>
+                    </div>
+                    <div class="hours-temp-item">
+                        <p class="hours third-three-hours">03:00</p>
+                        <div class="hours-ico third-three-hours-ico"></div>
+                        <p class="hours-temp third-three-hours-temp">23</p>
+                        <p class="hours-description third-three-hours-description"></p>
+                    </div>
+                    <div class="hours-temp-item">
+                        <p class="hours fourth-three-hours">03:00</p>
+                        <div class="hours-ico fourth-three-hours-ico"></div>
+                        <p class="hours-temp fourth-three-hours-temp">23</p>
+                        <p class="hours-description fourth-three-hours-description"></p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
-
 </body>
 
 </html>
